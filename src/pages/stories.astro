@@ -1,0 +1,235 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | Photosnap Website Challenge" />
+<Header />
+<main>
+  <section class="">
+    <picture>
+      <source
+        media="(min-width:1024px )"
+        srcset="/public/images/stories/desktop/moon-of-appalacia.jpg"
+      />
+      <source
+        media="(min-width:768px )"
+        srcset="/public/images/stories/tablet/moon-of-appalacia.jpg"
+      />
+      <img
+        src="/public/images/stories/mobile/moon-of-appalacia.jpg"
+        alt=""
+        class=""
+      />
+    </picture>
+    <div class="">
+      <h2 class="">Last month's featured story</h2>
+      <h3 class="">Hazy full moon of Appalachia</h3>
+      <h3 class="">
+        <span>March 2nd 2020</span>
+        by John Appleseed
+      </h3>
+      <p class="">
+        The dissected plateau area, while not actually made up of geological
+        mountains, is popularly called "mountains," especially in eastern
+        Kentucky and West Virginia, and while the ridges are not high, the
+        terrain is extremely rugged.
+      </p>
+      <div class="flex items-center gap-[1.62rem]">
+        <a
+          href="#"
+          class="block text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-500 ease-in-out hover:underline"
+        >
+          Read the story
+        </a>
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+            ><g fill="none" fill-rule="evenodd" stroke="#fff"
+              ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+            ></svg
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="lg:grid-cols-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+  >
+    <!-- The Mountains -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/mountains.jpg"
+        />
+        <img
+          src="/images/stories/mobile/mountains.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">The Mountains</h2>
+          <h3 class="text-sm font-normal leading-normal">by John Appleseed</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sunset Cityscapes -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/cityscapes.jpg"
+        />
+        <img
+          src="/images/stories/mobile/cityscapes.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Sunset Cityscapes
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Benjamin Cruz</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 18 Days Voyage -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/18-days-voyage.jpg"
+        />
+        <img
+          src="/images/stories/mobile/18-days-voyage.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">18 Days Voyage</h2>
+          <h3 class="text-sm font-normal leading-normal">by Alexei Borodin</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Architecturals -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/architecturals.jpg"
+        />
+        <img
+          src="/images/stories/mobile/architecturals.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Architecturals</h2>
+          <h3 class="text-sm font-normal leading-normal">by Samantha Brooke</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
