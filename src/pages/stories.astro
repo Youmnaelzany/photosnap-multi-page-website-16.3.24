@@ -7,24 +7,20 @@ import "@/styles/globals.css";
 <Layout title="Frontend Mentor | Photosnap Website Challenge" />
 <Header />
 <main>
-  <section class="">
+  <section class="relative">
     <picture>
       <source
         media="(min-width:1024px )"
-        srcset="/public/images/stories/desktop/moon-of-appalacia.jpg"
+        srcset="/images/stories/desktop/moon-of-appalacia.jpg"
       />
       <source
         media="(min-width:768px )"
-        srcset="/public/images/stories/tablet/moon-of-appalacia.jpg"
+        srcset="/images/stories/tablet/moon-of-appalacia.jpg"
       />
-      <img
-        src="/public/images/stories/mobile/moon-of-appalacia.jpg"
-        alt=""
-        class=""
-      />
+      <img src="/images/stories/mobile/moon-of-appalacia.jpg" alt="" class="" />
     </picture>
     <div
-      class="flex flex-col gap-4 bg-black py-12 pl-[1.81rem] pr-7 text-white"
+      class="flex flex-col gap-4 bg-black py-12 pl-[1.81rem] pr-7 text-white md:pt-[7.5rem] md:max-2xl:absolute md:max-2xl:top-0 md:max-2xl:bg-transparent md:max-2xl:pb-[7.63rem] lg:pl-28"
     >
       <h2
         class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
@@ -32,7 +28,7 @@ import "@/styles/globals.css";
         Last month's featured story
       </h2>
       <p
-        class="w-[18.875rem] text-[2rem] font-bold uppercase leading-10 tracking-[0.20831rem]"
+        class="w-[18.875rem] text-[2rem] font-bold uppercase leading-10 tracking-[0.20831rem] md:w-[23.1875rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.26044rem]"
       >
         Hazy full moon of Appalachia
       </p>
@@ -41,14 +37,14 @@ import "@/styles/globals.css";
         by John Appleseed
       </p>
       <p
-        class="w-[19.875rem] text-[0.9375rem] font-normal leading-[1.5625rem] opacity-60"
+        class="mt-2 w-[19.875rem] text-[0.9375rem] font-normal leading-[1.5625rem] opacity-60 md:w-[24.1875rem]"
       >
         The dissected plateau area, while not actually made up of geological
         mountains, is popularly called "mountains," especially in eastern
         Kentucky and West Virginia, and while the ridges are not high, the
         terrain is extremely rugged.
       </p>
-      <div class="flex items-center gap-[1.62rem]">
+      <div class="mt-2 flex items-center gap-[1.62rem]">
         <a
           href="#"
           class="block text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-500 ease-in-out hover:underline"
@@ -70,7 +66,7 @@ import "@/styles/globals.css";
     class="lg:grid-cols-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
   >
     <!-- The Mountains -->
-    <div class="relative">
+    <div class="overlay relative">
       <!-- STORIES'S IMG -->
       <picture>
         <source
@@ -85,11 +81,12 @@ import "@/styles/globals.css";
       </picture>
       <!-- STORIES DETAILES -->
       <div
-        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
       >
         <div
           class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
         >
+          <h2 class="text-sm font-normal leading-normal">April 16th 2020</h2>
           <h2 class="text-lg font-bold leading-[1.5625rem]">The Mountains</h2>
           <h3 class="text-sm font-normal leading-normal">by John Appleseed</h3>
         </div>
@@ -113,7 +110,7 @@ import "@/styles/globals.css";
       </div>
     </div>
     <!-- Sunset Cityscapes -->
-    <div class="relative">
+    <div class="overlay relative">
       <!-- STORIES'S IMG -->
       <picture>
         <source
@@ -128,11 +125,12 @@ import "@/styles/globals.css";
       </picture>
       <!-- STORIES DETAILES -->
       <div
-        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
       >
         <div
           class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
         >
+          <h2 class="text-sm font-normal leading-normal">April 14th 2020</h2>
           <h2 class="text-lg font-bold leading-[1.5625rem]">
             Sunset Cityscapes
           </h2>
@@ -158,7 +156,7 @@ import "@/styles/globals.css";
       </div>
     </div>
     <!-- 18 Days Voyage -->
-    <div class="relative">
+    <div class="overlay relative">
       <!-- STORIES'S IMG -->
       <picture>
         <source
@@ -173,11 +171,12 @@ import "@/styles/globals.css";
       </picture>
       <!-- STORIES DETAILES -->
       <div
-        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
       >
         <div
           class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
         >
+          <h2 class="text-sm font-normal leading-normal">April 11th 2020</h2>
           <h2 class="text-lg font-bold leading-[1.5625rem]">18 Days Voyage</h2>
           <h3 class="text-sm font-normal leading-normal">by Alexei Borodin</h3>
         </div>
@@ -201,7 +200,7 @@ import "@/styles/globals.css";
       </div>
     </div>
     <!-- Architecturals -->
-    <div class="relative">
+    <div class="overlay relative">
       <!-- STORIES'S IMG -->
       <picture>
         <source
@@ -216,11 +215,13 @@ import "@/styles/globals.css";
       </picture>
       <!-- STORIES DETAILES -->
       <div
-        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
       >
         <div
           class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
         >
+          <h2 class="text-sm font-normal leading-normal">April 9th 2020</h2>
+
           <h2 class="text-lg font-bold leading-[1.5625rem]">Architecturals</h2>
           <h3 class="text-sm font-normal leading-normal">by Samantha Brooke</h3>
         </div>
@@ -243,5 +244,570 @@ import "@/styles/globals.css";
         </div>
       </div>
     </div>
+    <!-- World Tour 2019 -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/world-tour.jpg"
+        />
+        <img
+          src="/images/stories/mobile/world-tour.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">April 7th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">World Tour 2019</h2>
+          <h3 class="text-sm font-normal leading-normal">by Timothy Wagner</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Unforeseen Corners -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/unforeseen-corners.jpg"
+        />
+        <img
+          src="/images/stories/mobile/unforeseen-corners.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">April 3rd 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Unforeseen Corners
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by William Malcolm</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- King on Africa: Part II -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/king-on-africa.jpg"
+        />
+        <img
+          src="/images/stories/mobile/king-on-africa.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 29th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            King on Africa: Part II
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Tim Hillenburg</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Trip to Nowhere -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/trip-to-nowhere.jpg"
+        />
+        <img
+          src="/images/stories/mobile/trip-to-nowhere.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 21st 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            The Trip to Nowhere
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Felicia Rourke</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rage of The Sea -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/rage-of-the-sea.jpg"
+        />
+        <img
+          src="/images/stories/mobile/rage-of-the-sea.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 19th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Rage of The Sea</h2>
+          <h3 class="text-sm font-normal leading-normal">by Mohammed Abdul</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Running Free -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/running-free.jpg"
+        />
+        <img
+          src="/images/stories/mobile/running-free.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 16th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Running Free</h2>
+          <h3 class="text-sm font-normal leading-normal">by Michelle</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Behind the Waves -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/behind-the-waves.jpg"
+        />
+        <img
+          src="/images/stories/mobile/behind-the-waves.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 11th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Behind the Waves
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Lamarr Wilson</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Calm Waters -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/calm-waters.jpg"
+        />
+        <img
+          src="/images/stories/mobile/calm-waters.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 9th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Calm Waters</h2>
+          <h3 class="text-sm font-normal leading-normal">by Samantha Brooke</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Milky Way -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/milky-way.jpg"
+        />
+        <img
+          src="/images/stories/mobile/milky-way.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 5th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">The Milky Way</h2>
+          <h3 class="text-sm font-normal leading-normal">by Benjamin Cruz</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Night at The Dark Forest -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/dark-forest.jpg"
+        />
+        <img
+          src="/images/stories/mobile/dark-forest.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 4th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Night at The Dark Forest
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Mohammed Abdul</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Somwarpet’s Beauty -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/somwarpet.jpg"
+        />
+        <img
+          src="/images/stories/mobile/somwarpet.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">March 1st 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Somwarpet&apos;s Beauty
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Michelle</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Land of Dreams -->
+    <div class="overlay relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/land-of-dreams.jpg"
+        />
+        <img
+          src="/images/stories/mobile/land-of-dreams.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 z-50 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-sm font-normal leading-normal">February 25th 2020</h2>
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Land of Dreams</h2>
+          <h3 class="text-sm font-normal leading-normal">by William Malcolm</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem] lg:gap-[9.19rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
+
+<style is:global>
+  img,
+  picture {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .overlay::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.27%,
+      rgba(0, 0, 0, 0.66) 100%
+    );
+  }
+</style>
+
+TODO:add overylay on the hero img
