@@ -1,10 +1,338 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 import "@/styles/globals.css";
 ---
 
-<Layout title="Frontend Mentor | Photosnap Website Challenge">
-  <main></main>
-</Layout>
+<Layout title="Frontend Mentor | Photosnap Website Challenge" />
+<Header />
+<main>
+  <!-- SHARE YOUR PHOTO -->
+  <section class="flex flex-col md:flex-row-reverse">
+    <!-- Hero Image -->
+    <picture>
+      <source
+        media="(min-width:1024px )"
+        srcset="/images/home/desktop/create-and-share.jpg"
+      />
+      <source
+        media="(min-width:768px )"
+        srcset="/images/home/tablet/create-and-share.jpg"
+      />
+      <img src="/images/home/mobile/create-and-share.jpg" alt="" class="" />
+    </picture>
+    <!-- Website Detailes -->
+    <div
+      class="web-det-wrapper relative h-[26.1875rem] bg-black py-[4.5rem] pl-[2.06rem] pr-6 text-white before:absolute before:top-0 before:h-[0.375rem] before:w-32 md:h-[40.625rem] md:px-[3.38rem] md:py-[10.81rem] before:md:left-0 before:md:top-[10.81rem] before:md:h-[19rem] before:md:w-[0.375rem] lg:px-28"
+    >
+      <h1
+        class="mb-4 w-[19.875rem] text-[2rem] font-bold uppercase leading-10 tracking-[0.20831rem] md:mb-[1.31rem] md:w-[24.1875rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.26044rem]"
+      >
+        Create and share your photo stories.
+      </h1>
+      <p
+        class="mb-[1.44rem] w-[19.875rem] font-normal leading-[1.5625rem] opacity-60 md:mb-12 md:w-[24.1875rem] md:text-[0.9375rem] md:leading-[1.5625rem]"
+      >
+        Photosnap is a platform for photographers and visual storytellers. We
+        make it easy to share photos, tell stories and connect with others.
+      </p>
+      <div class="flex items-center gap-[1.62rem]">
+        <a
+          href="#"
+          class="block text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-500 ease-in-out hover:underline"
+        >
+          Get an invite
+        </a>
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+            ><g fill="none" fill-rule="evenodd" stroke="#fff"
+              ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+            ></svg
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BEAUTIFUL STORIES -->
+  <section class="flex">
+    <picture>
+      <source
+        media="(min-width:1024px )"
+        srcset="/images/home/desktop/beautiful-stories.jpg"
+      />
+      <source
+        media="(min-width:768px )"
+        srcset="/images/home/tablet/beautiful-stories.jpg"
+      />
+      <img src="/images/home/mobile/beautiful-stories.jpg" alt="" class="" />
+    </picture>
+    <div
+      class="py-[5.75rem] pl-[2.06rem] pr-6 text-black md:px-[3.37rem] md:pb-[7.44rem] md:pt-[8.5rem] lg:pl-28 lg:pr-[6.94rem]"
+    >
+      <h2
+        class="mb-4 w-[19.875rem] text-[2rem] font-bold uppercase leading-[2.5rem] tracking-[0.20831rem] md:mb-[1.31rem] md:w-[24.1875rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.26044rem]"
+      >
+        Beautiful stories every time
+      </h2>
+      <p
+        class="mb-[1.44rem] w-[19.875rem] text-[0.9375rem] font-normal leading-[1.5625rem] opacity-60 md:mb-12 md:w-[24.1875rem]"
+      >
+        We provide design templates to ensure your stories look terrific. Easily
+        add photos, text, embed maps and media from other networks. Then share
+        your story with everyone.
+      </p>
+      <div class="flex items-center gap-[1.62rem]">
+        <a
+          href="#"
+          class="block text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-500 ease-in-out hover:underline"
+        >
+          Get an invite
+        </a>
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+            ><g fill="none" fill-rule="evenodd" stroke="#000"
+              ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+            ></svg
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DESIGNED FOR EVERYONE -->
+  <section class="flex flex-col md:flex-row-reverse">
+    <picture>
+      <source
+        media="(min-width:1024px )"
+        srcset="/images/home/desktop/designed-for-everyone.jpg"
+      />
+      <source
+        media="(min-width:768px )"
+        srcset="/images/home/tablet/designed-for-everyone.jpg"
+      />
+      <img
+        src="/images/home/mobile/designed-for-everyone.jpg"
+        alt=""
+        class=""
+      />
+    </picture>
+    <div
+      class="py-[5.75rem] pl-[2.06rem] pr-6 text-black md:px-[3.37rem] md:pt-[8.94rem] lg:pb-[9.94rem] lg:pl-28 lg:pr-[6.94rem]"
+    >
+      <h2
+        class="mb-4 w-[19.875rem] text-[2rem] font-bold uppercase leading-[2.5rem] tracking-[0.20831rem] md:mb-[1.31rem] md:w-[24.1875rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.26044rem]"
+      >
+        Designed for everyone
+      </h2>
+      <p
+        class="mb-[1.44rem] w-[19.875rem] text-[0.9375rem] font-normal leading-[1.5625rem] opacity-60 md:mb-12 md:w-[24.1875rem]"
+      >
+        Photosnap can help you create stories that resonate with your audience.
+        Our tool is designed for photographers of all levels, brands, businesses
+        you name it.
+      </p>
+      <div class="flex items-center gap-[1.62rem]">
+        <a
+          href="#"
+          class="block text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-500 ease-in-out hover:underline"
+        >
+          Get an invite
+        </a>
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+            ><g fill="none" fill-rule="evenodd" stroke="#000"
+              ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+            ></svg
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STORIES -->
+  <section class="lg:grid-cols-0 grid grid-cols-1 md:grid-cols-2 lg:flex">
+    <!-- The Mountains -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/mountains.jpg"
+        />
+        <img
+          src="/images/stories/mobile/mountains.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">The Mountains</h2>
+          <h3 class="text-sm font-normal leading-normal">by John Appleseed</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sunset Cityscapes -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/cityscapes.jpg"
+        />
+        <img
+          src="/images/stories/mobile/cityscapes.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">
+            Sunset Cityscapes
+          </h2>
+          <h3 class="text-sm font-normal leading-normal">by Benjamin Cruz</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 18 Days Voyage -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/18-days-voyage.jpg"
+        />
+        <img
+          src="/images/stories/mobile/18-days-voyage.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">18 Days Voyage</h2>
+          <h3 class="text-sm font-normal leading-normal">by Alexei Borodin</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Architecturals -->
+    <div class="relative">
+      <!-- STORIES'S IMG -->
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="/images/stories/desktop/architecturals.jpg"
+        />
+        <img
+          src="/images/stories/mobile/architecturals.jpg"
+          alt=""
+          class="md:w-[24.688rem]"
+        />
+      </picture>
+      <!-- STORIES DETAILES -->
+      <div
+        class="absolute bottom-0 left-8 pb-10 pl-[2.06] pr-8 text-white md:left-[2.63rem] lg:left-10"
+      >
+        <div
+          class="relative after:absolute after:-bottom-4 after:h-[0.0625rem] after:w-[19.375rem] after:bg-white after:opacity-25"
+        >
+          <h2 class="text-lg font-bold leading-[1.5625rem]">Architecturals</h2>
+          <h3 class="text-sm font-normal leading-normal">by Samantha Brooke</h3>
+        </div>
+        <div
+          class="mt-[2.31rem] flex items-center justify-between gap-[10.30rem]"
+        >
+          <a
+            href="#"
+            class="text-xs font-bold uppercase leading-normal tracking-[0.125rem]"
+          >
+            Read Story
+          </a>
+          <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-<style></style>
+<style>
+  .web-det-wrapper::before {
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+</style>

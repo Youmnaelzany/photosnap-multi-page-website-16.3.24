@@ -4,8 +4,9 @@ interface Props {
   description?: string;
 }
 
-const { title = 'Frontend Mentor | Photosnap Website Challenge', 
-description = 'Frontend Mentor | Photosnap Website Challenge'
+const {
+  title = "Frontend Mentor | Photosnap Website Challenge",
+  description = "Frontend Mentor | Photosnap Website Challenge",
 } = Astro.props;
 ---
 
@@ -13,14 +14,21 @@ description = 'Frontend Mentor | Photosnap Website Challenge'
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description}/>
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/public/images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public/images/favicon-32x32.png"
+    />
     <meta name="generator" content={Astro.generator} />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -44,6 +52,7 @@ description = 'Frontend Mentor | Photosnap Website Challenge'
   body {
     min-height: 100svh;
     font-family: "DM Sans", sans-serif;
+    max-width: 1440px;
   }
 
   img,
